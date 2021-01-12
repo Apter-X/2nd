@@ -13,7 +13,23 @@
   </xs:annotation>
   <xs:element name="gestion_clientsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gestion_clientsDataSet" msprop:Generator_UserDSName="gestion_clientsDataSet">
     <xs:complexType>
-      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clients" msprop:Generator_TableClassName="clientsDataTable" msprop:Generator_TableVarName="tableclients" msprop:Generator_TablePropName="clients" msprop:Generator_RowDeletingName="clientsRowDeleting" msprop:Generator_RowChangingName="clientsRowChanging" msprop:Generator_RowEvHandlerName="clientsRowChangeEventHandler" msprop:Generator_RowDeletedName="clientsRowDeleted" msprop:Generator_UserTableName="clients" msprop:Generator_RowChangedName="clientsRowChanged" msprop:Generator_RowEvArgName="clientsRowChangeEvent" msprop:Generator_RowClassName="clientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="client_id" msprop:Generator_ColumnVarNameInTable="columnclient_id" msprop:Generator_ColumnPropNameInRow="client_id" msprop:Generator_ColumnPropNameInTable="client_idColumn" msprop:Generator_UserColumnName="client_id" type="xs:string" />
+              <xs:element name="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_UserColumnName="first_name" type="xs:string" minOccurs="0" />
+              <xs:element name="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_UserColumnName="last_name" type="xs:string" minOccurs="0" />
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" type="xs:string" minOccurs="0" />
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
     </xs:complexType>
+    <xs:unique name="id" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:clients" />
+      <xs:field xpath="mstns:client_id" />
+    </xs:unique>
   </xs:element>
 </xs:schema>
