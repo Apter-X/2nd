@@ -13,6 +13,8 @@ namespace GC
         private string database;
         private string uid;
         private string password;
+        private string trust;
+        private int timeout;
 
         //Constructor
         public void DBConnect()
@@ -23,21 +25,24 @@ namespace GC
         //Initialize values
         private void Initialize()
         {
-            server = "localhost:8080";
-            database = "dragon_bot";
-            uid = "root";
+            server = "DESKTOP-P13SUTM\\MYDATABASE";
+            database = "gestion_clients";
+            uid = "sa";
             password = "";
+            trust = "yes";
+            timeout = 30;
+
             string connectionString;
-            connectionString = "user id=sa;" +
-                               "password=;server=DESKTOP-P13SUTM\\MYDATABASE;" +
-                               "Trusted_Connection=yes;" +
-                               "database=gestion_clients; " +
-                               "connection timeout=30";
+            connectionString = $"user id={uid};" +
+                               $"password={password};server={server};" +
+                               $"Trusted_Connection={trust};" +
+                               $"database={database}; " +
+                               $"connection timeout={timeout};";
 
             connection = new SqlConnection(connectionString);
         }
 
-        //open connection to database
+        //Open connection to database
         private bool OpenConnection()
         {
             try
@@ -81,7 +86,7 @@ namespace GC
             }
         }
 
-        //Insert statement
+        //Insert statement *In progress*
         public void Insert(string table, string refKeys, string values)
         {
             string query = $"INSERT INTO {table} ({refKeys}) VALUES({values})";
@@ -100,7 +105,7 @@ namespace GC
             }
         }
 
-        //Update statement
+        //Update statement *In progress*
         public void Update()
         {
             string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
@@ -123,8 +128,8 @@ namespace GC
             }
         }
 
-        //Delete statement
-        public void Delete()
+        //Delete statement *In progress*
+        public void Delete() 
         {
             string query = "DELETE FROM tableinfo WHERE name='John Smith'";
 
@@ -136,10 +141,10 @@ namespace GC
             }
         }
 
-        //Select statement
-        public List<string>[] Select()
+        //Select statement *In progress*
+        public List<string>[] Select(string itemInfo, string tableInfo)
         {
-            string query = "SELECT * FROM tableinfo";
+            string query = $"SELECT {itemInfo} FROM {tableInfo}";
 
             //Create a list to store the result
             List<string>[] list = new List<string>[3];
@@ -178,7 +183,7 @@ namespace GC
             }
         }
 
-        //Count statement
+        //Count statement *In progress*
         public int Count()
         {
             string query = "SELECT Count(*) FROM tableinfo";
@@ -204,7 +209,7 @@ namespace GC
             }
         }
 
-        //Backup
+        //Backup *In progress*
         public void Backup()
         {
             try
@@ -248,7 +253,7 @@ namespace GC
             }
         }
 
-        //Restore
+        //Restore *In progress*
         public void Restore()
         {
             try

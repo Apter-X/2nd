@@ -18,20 +18,7 @@ namespace GC
 
             Database conn = new Database();
 
-            try
-            {
-                conn.DBConnect();
-                MessageBox.Show("Connected!");
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Error Connection: " + e);
-                throw;
-            }
-            finally
-            {
-                conn.Count();
-            }
+            conn.Insert("clients", "first_name, last_name, address, city", "zak, kaz, 17 rue Metz, casablanca");
         }
     }
 }
