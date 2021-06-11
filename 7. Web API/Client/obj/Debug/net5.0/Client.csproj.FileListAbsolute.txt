@@ -1,0 +1,16 @@
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.csprojAssemblyReference.cache
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.AssemblyInfoInputs.cache
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.AssemblyInfo.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.RazorComponent.input.cache
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\youcode\Desktop\BlazorAPI\Client\obj\Debug\net5.0\Client.RazorComponent.output.cache

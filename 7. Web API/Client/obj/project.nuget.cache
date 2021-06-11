@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GFgDNPkPO1YrPYDT22sBgOx+4/tsuA8wL7GmNgsT1Lwb+NGXqtnD/YjKe9WnACxYW1nK1+HXxJK7wcWS/5kSUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\youcode\\Desktop\\BlazorAPI\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\system.interactive.async\\5.0.0\\system.interactive.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
